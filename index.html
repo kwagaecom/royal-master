@@ -7,6 +7,10 @@
         <link rel="icon" href="image/favicon.png" type="image/png">
         <title>Royal Hotel</title>
         <!-- Bootstrap CSS -->
+<meta name="keywords" content="hotel, luxury accommodations, comfortable rooms, hotel amenities, swimming pool, spa, restaurant, conference rooms, travel, vacation, booking, hotel deals, Travisa Hotel">
+<meta name="description" content="Discover luxury and comfort at Travisa Hotel, offering premium amenities like a spa, swimming pool, fine dining, and conference facilities. Book your stay for an unforgettable experience in the heart of the city.">
+
+
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="vendors/linericon/style.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -19,10 +23,13 @@
         <link rel="stylesheet" href="css/responsive.css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
     </head>
+
     <body>
-        <!--================Header Area =================-->
-       <header class="header_area">
-    <div class="container">
+        <!--================Header Area ===<header class="header_area">: Defines the header area with a header_area class for custom styling.==============
+<nav class="navbar navbar-expand-lg navbar-light">: Creates a Bootstrap navbar with properties to expand on larger screens (navbar-expand-lg) and apply a light theme (navbar-light), making the links dark by default.
+-->
+      <!--================Header Area ==center and restrict the width of the content, ensuring the header remains within set margins for better alignment on larger screens.===============-->
+     <div class="container-fluid fixed-top">
         <nav class="navbar navbar-expand-lg navbar-light">
             <!-- Brand and toggle get grouped for better mobile display -->
             <a class="navbar-brand logo_h" href="#home"><img src="image/Logo.png" alt="Logo"></a>
@@ -44,93 +51,78 @@
                 </ul>
             </div> 
         </nav>
-    </div>
-</header>
+ </div>
+
 
         <!--================Header Area =================-->
         
         <!--================Banner Area =================-->
- <section class="banner_area"id="home">
-            <div class="booking_table d_flex align-items-center">
-            	<div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
-				<div class="container">
-					<div class="banner_content text-center">
-						<h6>Away from monotonous life</h6>
-						<h2>Relax Your Mind</h2>
-						<p>If you are looking at blank cassettes on the web, you may be very confused at the<br> difference in price. You may see some for as low as $.17 each.</p>
-						<a href="#" class="btn theme_btn button_hover">Get Started</a>
-					</div>
-				</div>
-            </div>
-            <div class="hotel_booking_area position">
+<style>
+.carousel-item {
+    background-size: cover; /* Ensure the image covers the entire area */
+    background-position: center; /* Center the image */
+    height: 100vh; /* Set a height for the carousel */
+}
+</style>
+ <section class="banner_area carousel slide" id="home" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#home" data-slide-to="0" class="active"></li>
+        <li data-target="#home" data-slide-to="1"></li>
+        <li data-target="#home" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Slides -->
+    <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url('image/istockphoto-1403277131-612x612.jpg');">
+            <div class="booking_table d-flex align-items-center">
+                <div class="overlay bg-parallax"></div>
                 <div class="container">
-                    <div class="hotel_booking_table">
-                        <div class="col-md-3">
-                            <h2>Book<br> Your Room</h2>
-                        </div>
-                        <div class="col-md-9">
-                            <div class="boking_table">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="book_tabel_item">
-                                            <div class="form-group">
-                                                <div class='input-group date' id='datetimepicker11'>
-                                                    <input type='text' class="form-control" placeholder="Arrival Date"/>
-                                                    <span class="input-group-addon">
-                                                        <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class='input-group date' id='datetimepicker1'>
-                                                    <input type='text' class="form-control" placeholder="Departure Date"/>
-                                                    <span class="input-group-addon">
-                                                        <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="book_tabel_item">
-                                            <div class="input-group">
-                                                <select class="wide">
-                                                    <option data-display="Adult">Adult</option>
-                                                    <option value="1">Old</option>
-                                                    <option value="2">Younger</option>
-                                                    <option value="3">Potato</option>
-                                                </select>
-                                            </div>
-                                            <div class="input-group">
-                                                <select class="wide">
-                                                    <option data-display="Child">Child</option>
-                                                    <option value="1">Child</option>
-                                                    <option value="2">Baby</option>
-                                                    <option value="3">Child</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="book_tabel_item">
-                                            <div class="input-group">
-                                                <select class="wide">
-                                                    <option data-display="Child">Number of Rooms</option>
-                                                    <option value="1">Room 01</option>
-                                                    <option value="2">Room 02</option>
-                                                    <option value="3">Room 03</option>
-                                                </select>
-                                            </div>
-                                            <a class="book_now_btn button_hover" href="#">Book Now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="banner_content text-center">
+                        <h6>Away from monotonous life</h6>
+                        <h2>Relax Your Mind</h2>
+                        
+                        <a href="#" class="btn theme_btn button_hover"><span class="badge rounded-pill bg-warning text-dark">Call Us</span></a>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url('image/istockphoto-1370825295-612x612.jpg');">
+            <div class="booking_table d-flex align-items-center">
+                <div class="overlay bg-parallax"></div>
+                <div class="container">
+                    <div class="banner_content text-center">
+                        <h6>Experience Tranquility</h6>
+                        <h2>Find Your Peace</h2>
+                        
+                       <a href="#" class="btn theme_btn button_hover"><span class="badge rounded-pill bg-warning text-dark">Call Us</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url('image/premium_photo.jpg');">
+            <div class="booking_table d-flex align-items-center">
+                <div class="overlay bg-parallax"></div>
+                <div class="container">
+                    <div class="banner_content text-center">
+                        <h6>Luxury and Comfort</h6>
+                        <h2>Your Ideal Getaway</h2>
+                       
+                       <a href="#" class="btn theme_btn button_hover"><span class="badge rounded-pill bg-warning text-dark">Call Us</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Controls -->
+   
+</section>
 
 
         <!--================Banner Area =================-->
@@ -139,9 +131,12 @@
         <div class="row">
             <div class="col-md-6 d-flex align-items-center">
                 <div class="about_content">
-                    <h2 class="title title_color">About Us<br>Our History<br>Mission & Vision</h2>
-                    <p>Inappropriate behavior is often laughed off as “boys will be boys.” However, women face higher conduct standards, especially in the workplace. It’s crucial that, as women, our behavior on the job is beyond reproach. Inappropriate behavior is often laughed at, but it’s essential to maintain professionalism.</p>
-                    <a href="#" class="button_hover theme_btn_two">Request Custom Price</a>
+                    <h2 align="center"class="title title_color">About Us<br>Our History<br></h2>
+                   <p>Established in 1990, our hotel has been a sanctuary for travelers seeking comfort and luxury. Over the years, we've expanded our facilities while maintaining the charm and warmth that our guests love.</p>
+
+            <h3 class="subtitle"><span class="badge bg-primary">Mission</span> &<span class="badge bg-info">Vision</span> </h3> 
+            <p>Our mission is to provide an unforgettable experience through exceptional service, world-class amenities, and a commitment to sustainability. We envision being the leading choice for travelers who seek comfort, elegance, and personalized service.</p>
+                   
                 </div>
             </div>
             <div class="col-md-6">
@@ -172,14 +167,7 @@
                             </div>
                         </div>
 
-                    <a class="carousel-control-prev" href="#aboutCarousel" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#aboutCarousel" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+                    
                 </div>
             </div>
         </div>
@@ -191,14 +179,16 @@
             <div class="container">
                 <div class="section_title text-center">
                     <h2 class="title_color">Hotel Accomodation</h2>
-                    <p>We all live in an age that belongs to the young at heart. Life that is becoming extremely fast, </p>
+                    
                 </div>
                 <div class="row mb_30">
                     <div class="col-lg-3 col-sm-6">
                         <div class="accomodation_item text-center">
                             <div class="hotel_img">
                                 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEioBkx_RMjopSMn2Z1ivCavN7wCTFtk7UZcOqn16VSSmQbJTucNaP5ftEwZGTL1raF0HBeRXsfpK8zKyavUy0VVUyLHRzhcYjU2GBYp8p1BC6GVGbwGt7Klj_RMp9Xcz0-5TvMdDQCDtuTO8P8Rh5UI47ULYKpRZNAEgvZ63P74xrqP5PSjAz0WCOKUW1Wq/s320/gallery_3.jpg" alt="">
-                                <a href="#" class="btn theme_btn button_hover">Book Now</a>
+                                  <button type="button" class="btn theme_btn button_hover" data-toggle="modal" data-target="#hotelBookingModal1">
+  <span class="badge rounded-pill bg-warning">Book</span>
+</button>
                             </div>
                             <a href="#"><h4 class="sec_h4">Double Deluxe Room</h4></a>
                             <h5>$250<small>/night</small></h5>
@@ -208,7 +198,9 @@
                         <div class="accomodation_item text-center">
                             <div class="hotel_img">
                                 <img src="image/room2.jpg" alt="">
-                                <a href="#" class="btn theme_btn button_hover">Book Now</a>
+                                 <button type="button" class="btn theme_btn button_hover" data-toggle="modal" data-target="#hotelBookingModal1">
+  <span class="badge rounded-pill bg-warning">Book</span>
+</button>
                             </div>
                             <a href="#"><h4 class="sec_h4">Single Deluxe Room</h4></a>
                             <h5>$200<small>/night</small></h5>
@@ -218,7 +210,9 @@
                         <div class="accomodation_item text-center">
                             <div class="hotel_img">
                                 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNFKuE1LWcZmCElaLJRda4X9olM17wNUInLhlRBeIQy3Tvucq49arFgO3csnoRMjl-lIqXGM8U4f9bxFQXLq5VbDbvfHD3KYMRkoIW3ZPFnVOGtQHr20gZO4HzCNxQD6lS1ATu8v1H7JR3S2e9NUYfwtmK8X7_v59WnU4TNR48sajHPL-lDnRd9eq5m9LI/s320/details_2.jpg" alt="">
-                                <a href="#" class="btn theme_btn button_hover">Book Now</a>
+                                <button type="button" class="btn theme_btn button_hover" data-toggle="modal" data-target="#hotelBookingModal1">
+  <span class="badge rounded-pill bg-warning">Book</span>
+</button>
                             </div>
                             <a href="#"><h4 class="sec_h4">Honeymoon Suit</h4></a>
                             <h5>$750<small>/night</small></h5>
@@ -228,7 +222,9 @@
                         <div class="accomodation_item text-center">
                             <div class="hotel_img">
                                 <img src="image/room4.jpg" alt="">
-                                <a href="#" class="btn theme_btn button_hover">Book Now</a>
+                                  <button type="button" class="btn theme_btn button_hover" data-toggle="modal" data-target="#hotelBookingModal1">
+  <span class="badge rounded-pill bg-warning">Book</span>
+</button>
                             </div>
                             <a href="#"><h4 class="sec_h4">Economy Double</h4></a>
                             <h5>$200<small>/night</small></h5>
@@ -237,8 +233,214 @@
                 </div>
             </div>
         </section>
+<div style="max-width: 600px; margin: 20px auto; border: 2px solid #8b5c00; border-radius: 8px; overflow: hidden;">
+  <!-- Restaurant -->
+  <div style="border-bottom: 1px solid #8b5c00;">
+    <button data-ui-tablist-tab style="width: 100%; padding: 15px; background-color: #fff3e0; border: none; text-align: left; font-size: 18px; font-weight: bold; color: #8b5c00; cursor: pointer;">🍽️ Restaurant</button>
+    <div data-ui-tablist-tabpanel style="padding: 15px; display: block;">
+      <div style="font-size: 16px; color: #5c3b00;">
+        Enjoy gourmet dining with a diverse menu of local and international cuisines prepared by top chefs.
+      </div>
+    </div>
+  </div>
+
+  <!-- Sports Club -->
+  <div style="border-bottom: 1px solid #8b5c00;">
+    <button data-ui-tablist-tab style="width: 100%; padding: 15px; background-color: #fff3e0; border: none; text-align: left; font-size: 18px; font-weight: bold; color: #8b5c00; cursor: pointer;">🎾 Sports Club</button>
+    <div data-ui-tablist-tabpanel style="padding: 15px; display: none;">
+      <div style="font-size: 16px; color: #5c3b00;">
+        Stay active with access to our premium sports facilities, including tennis courts, badminton, and more.
+      </div>
+    </div>
+  </div>
+
+  <!-- Swimming Pool -->
+  <div style="border-bottom: 1px solid #8b5c00;">
+    <button data-ui-tablist-tab style="width: 100%; padding: 15px; background-color: #fff3e0; border: none; text-align: left; font-size: 18px; font-weight: bold; color: #8b5c00; cursor: pointer;">🏊 Swimming Pool</button>
+    <div data-ui-tablist-tabpanel style="padding: 15px; display: none;">
+      <div style="font-size: 16px; color: #5c3b00;">
+        Take a refreshing dip in our outdoor pool, complete with loungers and a poolside bar.
+      </div>
+    </div>
+  </div>
+
+  <!-- Car Rental -->
+  <div style="border-bottom: 1px solid #8b5c00;">
+    <button data-ui-tablist-tab style="width: 100%; padding: 15px; background-color: #fff3e0; border: none; text-align: left; font-size: 18px; font-weight: bold; color: #8b5c00; cursor: pointer;">🚗 Rent a Car</button>
+    <div data-ui-tablist-tabpanel style="padding: 15px; display: none;">
+      <div style="font-size: 16px; color: #5c3b00;">
+        Explore the city at your leisure with our convenient car rental services, offering a range of vehicles.
+      </div>
+    </div>
+  </div>
+
+  <!-- Gymnasium -->
+  <div style="border-bottom: 1px solid #8b5c00;">
+    <button data-ui-tablist-tab style="width: 100%; padding: 15px; background-color: #fff3e0; border: none; text-align: left; font-size: 18px; font-weight: bold; color: #8b5c00; cursor: pointer;">💪 Gymnasium</button>
+    <div data-ui-tablist-tabpanel style="padding: 15px; display: none;">
+      <div style="font-size: 16px; color: #5c3b00;">
+        Maintain your fitness routine with our state-of-the-art gym, open 24/7 for your convenience.
+      </div>
+    </div>
+  </div>
+
+  <!-- Bar -->
+  <div>
+    <button data-ui-tablist-tab style="width: 100%; padding: 15px; background-color: #fff3e0; border: none; text-align: left; font-size: 18px; font-weight: bold; color: #8b5c00; cursor: pointer;">🍹 Bar</button>
+    <div data-ui-tablist-tabpanel style="padding: 15px; display: none;">
+      <div style="font-size: 16px; color: #5c3b00;">
+        Unwind with a variety of signature cocktails, wines, and spirits at our luxurious bar.
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const accordionButtons = document.querySelectorAll('[data-ui-tablist-tab]');
+  
+  accordionButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const panel = button.nextElementSibling;
+      const isOpen = panel.style.display === 'block';
+
+      document.querySelectorAll('[data-ui-tablist-tabpanel]').forEach(p => p.style.display = 'none');
+      
+      if (!isOpen) {
+        panel.style.display = 'block';
+      }
+    });
+  });
+</script>
+
         <!--================ Accomodation Area  =================-->
-        
+   <div class="modal fade" id="hotelBookingModal1" tabindex="-1" aria-labelledby="hotelBookingModalLabel1" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="hotelBookingModalLabel1">Book Your Room</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+     <div class="modal-body" style="background-image: url('https://images.unsplash.com/photo-1479502806991-251c94be6b15?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aG90ZWwlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww'); background-size: cover; background-position: center;">
+                    <div class="icon">   <i class="fa fa-tourist"></i></div>
+<form id="acupressureBookingForm">
+         <div class="container">
+          <div class="hotel_booking_table">
+            <div class="row">
+              <!-- Name, Phone, and Email Section -->
+              <div class="col-lg-4 col-md-6 mb-3">
+                <div class="form-group">
+                  <input type="text" class="form-control rounded-input" placeholder="Full Name" required />
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-3">
+                <div class="form-group">
+                  <input type="tel" class="form-control rounded-input" placeholder="Phone Number" required />
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-12 mb-3">
+                <div class="form-group">
+                  <input type="email" class="form-control rounded-input" placeholder="Email ID" required />
+                </div>
+              </div>
+              <!-- Booking Dates Section -->
+              <div class="col-lg-4 col-md-6 mb-3">
+                <div class="book_table_item">
+                  <div class="form-group">
+                    <div class='input-group date' id='datetimepicker11'>
+                      <input type='text' class="form-control rounded-input" placeholder="Arrival Date" required />
+                      <span class="input-group-addon">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class='input-group date' id='datetimepicker1'>
+                      <input type='text' class="form-control rounded-input" placeholder="Departure Date" required />
+                      <span class="input-group-addon">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Adults and Children Section -->
+              <div class="col-lg-4 col-md-6 mb-3">
+                <div class="book_table_item">
+                  <div class="input-group mb-3">
+                    <select class="wide form-controlrounded-input">
+                      <option data-display="Adult">Adult</option>
+                      <option value="1">1 Adult</option>
+                      <option value="2">2 Adults</option>
+                      <option value="3">3 Adults</option>
+                    </select>
+                  </div>
+                  <div class="input-group mt-3"> <!-- Margin-top for spacing -->
+                    <select class="wide form-control rounded-input">
+                      <option data-display="Child">Child</option>
+                      <option value="0">0</option>
+                      <option value="1">1 Child</option>
+                      <option value="2">2 Children</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <!-- Room Selection Section -->
+              <div class="col-lg-4 col-md-12 mb-3">
+                <div class="book_table_item">
+                  <div class="input-group mb-3">
+                    <select class="wide form-control rounded-input">
+                      <option data-display="Number of Rooms">Number of Rooms</option>
+                      <option value="1">1 Room</option>
+                      <option value="2">2 Rooms</option>
+                      <option value="3">3 Rooms</option>
+                    </select>
+                  </div>
+                  <!-- Type of Room Section -->
+                  <div class="input-group mt-3">
+                    <select class="wide form-control rounded-input">
+                      <option data-display="Type of Room">Type of Room</option>
+                      <option value="single">Single Room</option>
+                      <option value="double">Double Room</option>
+                      <option value="suite">Suite</option>
+                      <option value="deluxe">Deluxe Room</option>
+<option value="suite">Honeymoon</option>
+                      <option value="deluxe">Economy Room</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a class="btn btn-primary" href="#">Book Now</a>
+ </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Optional: Include Bootstrap and jQuery if not already included -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+  /* Make modal background transparent */
+  .modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.2); /* Adjust transparency as needed */
+  }
+
+  /* Adjust spacing between Adult and Child dropdowns */
+  .book_table_item .input-group.mb-3 {
+    margin-bottom: 1rem; /* Space between dropdowns */
+  }
+</style>
+
         <!--================ Facilities Area  =================-->
         <section class="facilities_area section_gap"id="services">
             <div class="overlay bg-parallax" data-stellar-ratio="0.8" data-stellar-vertical-offset="0" data-background="">  
@@ -246,67 +448,447 @@
             <div class="container">
                 <div class="section_title text-center">
                     <h2 class="title_w">Royal Facilities</h2>
-                    <p>Who are in extremely love with eco friendly system.</p>
+                    
                 </div>
                 <div class="row mb_30">
                     <div class="col-lg-4 col-md-6">
                         <div class="facilities_item">
                             <h4 class="sec_h4"><i class="lnr lnr-dinner"></i>Restaurant</h4>
-                            <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                           
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#restaurantServiceModal">
+  Order Food & Drinks
+</button>
+
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="facilities_item">
                             <h4 class="sec_h4"><i class="lnr lnr-bicycle"></i>Sports CLub</h4>
-                            <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sportsClubModal">
+  Sports CLub
+</button>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="facilities_item">
                             <h4 class="sec_h4"><i class="lnr lnr-shirt"></i>Swimming Pool</h4>
-                            <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#swimmingPoolModal">
+ Swimming Pool
+</button>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="facilities_item">
                             <h4 class="sec_h4"><i class="lnr lnr-car"></i>Rent a Car</h4>
-                            <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#carRentalModal">
+ Rent a Car
+</button>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="facilities_item">
                             <h4 class="sec_h4"><i class="lnr lnr-construction"></i>Gymnesium</h4>
-                            <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#gymModal">
+  Gymnesium
+</button>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="facilities_item">
                             <h4 class="sec_h4"><i class="lnr lnr-coffee-cup"></i>Bar</h4>
-                            <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#barModal">
+ Bar
+</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+<div class="modal fade" id="restaurantServiceModal" tabindex="-1" aria-labelledby="restaurantServiceModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="restaurantServiceModalLabel">Restaurant Service - Order Food & Drinks</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+       <div class="modal-body" style="background-image: url('https://media.istockphoto.com/id/1316145932/photo/table-top-view-of-spicy-food.webp?a=1&b=1&s=612x612&w=0&k=20&c=scseGeDCjSghwD2RELSaaT2Pn2NQz0gflEQ4BuiTSjs='); background-size: cover; background-position: center;">
+                    <div class="icon">   <i class="fa fa-tourist"></i></div>
+<form id="acupressureBookingForm">
+        <div class="container">
+          <div class="row">
+            <!-- Name and Table Number -->
+            <div class="col-md-6 mb-3">
+              <input type="text" class="form-control rounded-input" placeholder="Your Name" required />
+            </div>
+            <div class="col-md-6 mb-3">
+              <input type="text" class="form-control rounded-input" placeholder="Room Number" required />
+            </div>
+
+            <!-- Food Selection -->
+            <div class="col-md-6 mb-3">
+              <div class="form-group">
+                <label for="foodSelection">Choose Food Item</label>
+                <select class="form-control rounded-input" id="foodSelection">
+                  <option value="" disabled selected>Select a Food Item</option>
+                  <option value="pasta">Pasta</option>
+                  <option value="burger">Burger</option>
+                  <option value="salad">Salad</option>
+                  <option value="pizza">Pizza</option>
+                  <option value="steak">Steak</option>
+ <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Drink Selection -->
+            <div class="col-md-6 mb-3">
+              <div class="form-group">
+                <label for="drinkSelection">Choose Drink Item</label>
+                <select class="form-control rounded-input" id="drinkSelection">
+                  <option value="" disabled selected>Select a Drink Item</option>
+                  <option value="water">Water</option>
+                  <option value="soda">Soda</option>
+                  <option value="wine">Wine</option>
+                  <option value="beer">Beer</option>
+                  <option value="cocktail">Cocktail</option>
+  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<div class="mb-2">
+ 
+  <textarea class="form-control" id="exampleFormControlTextarea1"placeholder="Put Required Order in Detail" rows="3"></textarea>
+</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary"  data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Place Order</button>
+</form>
+      </div>
+    </div>
+  </div>
+</div>
+
         <!--================ Facilities Area  =================-->
-        
+        <div class="modal fade" id="sportsClubModal" tabindex="-1" aria-labelledby="sportsClubModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="sportsClubModalLabel">Sports Club Service - Book Your Activity</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="background-image: url('https://media.istockphoto.com/id/1412985102/photo/top-down-aerial-view-of-doubles-pickleball-game.webp?a=1&b=1&s=612x612&w=0&k=20&c=M5eNDMoBTcv5ZvLO4pZBbCzvbyLOw49Dz98VzCdBJzE='); background-size: cover; background-position: center;">
+                    <div class="icon">   <i class="fa fa-tourist"></i></div>
+<form id="acupressureBookingForm">
+        <div class="container">
+          <div class="row">
+            <!-- Name Input -->
+            <div class="col-md-6 mb-3">
+              <input type="text" class="form-control rounded-input" placeholder="Your Name" required />
+            </div>
+
+            <!-- Room Number Input -->
+            <div class="col-md-6 mb-3">
+              <input type="text" class="form-control rounded-input" placeholder="Room Number" required />
+            </div>
+
+            <!-- Sports Activity Selection -->
+            <div class="col-md-6 mb-3">
+              <label for="activitySelection">Choose Activity</label>
+              <select class="form-control rounded-input" id="activitySelection">
+                <option value="" disabled selected>Select an Activity</option>
+                <option value="tennis">Tennis</option>
+                <option value="yoga">Yoga</option>
+                <option value="squash">Squash</option>
+              </select>
+            </div>
+
+            <!-- Time Slot Selection -->
+            <div class="col-md-6 mb-3">
+              <label for="timeSlot">Choose Time Slot</label>
+              <select class="form-control rounded-input" id="timeSlot">
+                <option value="" disabled selected>Select a Time Slot</option>
+                <option value="morning">Morning (6 AM - 10 AM)</option>
+                <option value="afternoon">Afternoon (12 PM - 4 PM)</option>
+                <option value="evening">Evening (6 PM - 9 PM)</option>
+              </select>
+            </div>
+
+            <!-- Number of Participants -->
+            <div class="col-md-12 mb-3">
+              <label for="participants">Number of Participants</label>
+              <input type="number" class="form-control rounded-input" id="participants" placeholder="Enter number of participants" min="1" max="10" required />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Confirm Booking</button>
+</form>
+      </div>
+    </div>
+  </div>
+</div>
         <!--================ About History Area  =================-->
-      
+      <div class="modal fade" id="swimmingPoolModal" tabindex="-1" aria-labelledby="swimmingPoolModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="swimmingPoolModalLabel">Swimming Pool Service - Book Your Session</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="background-image: url('https://media.istockphoto.com/id/155351473/photo/young-man-swimming-in-a-swimming-pool.webp?a=1&b=1&s=612x612&w=0&k=20&c=75Rm-N8yApLQvix0A8TkCCdl9LxFTVw8FzanIIs9qYo='); background-size: cover; background-position: center;">
+                    <div class="icon">   <i class="fa fa-swim"></i></div>
+        <form id="acupressureBookingForm">
+        <div class="container">
+          <div class="row">
+            <!-- Guest Name -->
+            <div class="col-md-6 mb-3">
+              <input type="text" class="form-control rounded-input" placeholder="Your Name" required />
+            </div>
+
+            <!-- Room Number -->
+            <div class="col-md-6 mb-3">
+              <input type="text" class="form-control rounded-input" placeholder="Room Number" required />
+            </div>
+
+            <!-- Session Time Selection -->
+            <div class="col-md-6 mb-3">
+              <label for="sessionTime">Choose Session Time</label>
+              <select class="form-control rounded-input" id="sessionTime">
+                <option value="" disabled selected>Select a Time</option>
+                <option value="morning">Morning (6 AM - 10 AM)</option>
+                <option value="afternoon">Afternoon (12 PM - 4 PM)</option>
+                <option value="evening">Evening (6 PM - 9 PM)</option>
+              </select>
+            </div>
+
+            <!-- Number of Participants -->
+            <div class="col-md-6 mb-3">
+              <label for="participants">Number of People</label>
+              <input type="number" class="form-control rounded-input" id="participants" placeholder="Enter number of participants" min="1" max="10" required />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Confirm Booking</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
         <!--================ About History Area  =================-->
-        
+        <div class="modal fade" id="carRentalModal" tabindex="-1" aria-labelledby="carRentalModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="carRentalModalLabel">Car Rental Service - Reserve Your Car</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="background-image: url('https://images.unsplash.com/photo-1469285994282-454ceb49e63c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNhciUyMHJlbnRhbCUyMHNlcnZpY2V8ZW58MHx8MHx8fDA%3D'); background-size: cover; background-position: center;">
+                    <div class="icon">   <i class="fa fa-rent"></i></div>
+                      <form id="acupressureBookingForm">
+        <div class="container">
+          <div class="row">
+            <!-- Customer Name -->
+            <div class="col-md-6 mb-3">
+              <input type="text" class="form-control rounded-input" placeholder="Your Name" required />
+            </div>
+
+            <!-- Room Number -->
+            <div class="col-md-6 mb-3">
+              <input type="text" class="form-control rounded-input" placeholder="Room Number" required />
+            </div>
+
+            <!-- Car Type Selection -->
+            <div class="col-md-6 mb-3">
+              <label for="carType">Choose Car Type</label>
+              <select class="form-control rounded-input" id="carType">
+                <option value="" disabled selected>Select Car Type</option>
+                <option value="sedan">Sedan</option>
+                <option value="suv">SUV</option>
+                <option value="luxury">Luxury</option>
+                <option value="van">Van</option>
+                  <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <!-- Pickup Date -->
+            <div class="col-md-6 mb-3">
+              <label for="pickupDate">Pickup Date</label>
+              <input type="date" class="form-control rounded-input" id="pickupDate" required />
+            </div>
+
+            <!-- Drop-off Date -->
+            <div class="col-md-6 mb-3">
+              <label for="dropOffDate">Drop-off Date</label>
+              <input type="date" class="form-control rounded-input" id="dropOffDate" required />
+            </div>
+
+            <!-- Special Requests -->
+            <div class="col-md-12 mb-3">
+              <label for="specialRequests">Special Requests (Optional)</label>
+              <textarea class="form-control rounded-input" id="specialRequests" placeholder="Additional requests like baby seat, GPS, etc." rows="2"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Confirm Booking</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="gymModal" tabindex="-1" aria-labelledby="gymModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="gymModalLabel">Gym Service - Reserve Your Session</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="background-image: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Z3ltJTIwc2VydmljZXxlbnwwfHwwfHx8MA%3D%3D'); background-size: cover; background-position: center;">
+                    <div class="icon">   <i class="fa fa-rent"></i></div>
+                     <form id="acupressureBookingForm">
+        <div class="container">
+          <div class="row">
+            <!-- Guest Name -->
+            <div class="col-md-6 mb-3">
+              <input type="text" class="form-control rounded-input" placeholder="Your Name" required />
+            </div>
+
+            <!-- Room Number -->
+            <div class="col-md-6 mb-3">
+              <input type="text" class="form-control rounded-input" placeholder="Room Number" required />
+            </div>
+
+            <!-- Session Time Selection -->
+            <div class="col-md-6 mb-3">
+              <label for="sessionTime">Choose Session Time</label>
+              <select class="form-control rounded-input" id="sessionTime">
+                <option value="" disabled selected>Select a Time</option>
+                <option value="morning">Morning (6 AM - 10 AM)</option>
+                <option value="afternoon">Afternoon (12 PM - 4 PM)</option>
+                <option value="evening">Evening (6 PM - 9 PM)</option>
+              </select>
+            </div>
+
+            <!-- Personal Trainer Option -->
+            <div class="col-md-6 mb-3">
+              <label for="personalTrainer">Personal Trainer</label>
+              <select class="form-control rounded-input" id="personalTrainer">
+                <option value="none" selected>No Trainer</option>
+                <option value="trainer">Request Personal Trainer</option>
+              </select>
+            </div>
+
+            <!-- Number of Participants -->
+            <div class="col-md-12 mb-3">
+              <label for="participants">Number of Participants</label>
+              <input type="number" class="form-control rounded-input" id="participants" placeholder="Enter number of participants" min="1" max="5" required />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Confirm Booking</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal Structure -->
+<div class="modal fade" id="barModal" tabindex="-1" aria-labelledby="barModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="barModalLabel">Bar Service - Reserve Your Table</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="background-image: url('https://media.istockphoto.com/id/1192104619/photo/sommelier-serving-glasses-of-winetasting-event.webp?a=1&b=1&s=612x612&w=0&k=20&c=mVXbhMRdg4MAlUe53pCXKq-jvzBmw0LWQI8kZPVv14o='); background-size: cover; background-position: center;">
+                    <div class="icon">   <i class="fa fa-rent"></i></div>
+                    <form id="acupressureBookingForm">
+        <div class="container">
+          <div class="row">
+            <!-- Guest Name -->
+            <div class="col-md-6 mb-3">
+              <input type="text" class="form-control rounded-input" placeholder="Your Name" required />
+            </div>
+
+            <!-- Room Number -->
+            <div class="col-md-6 mb-3">
+              <input type="text" class="form-control rounded-input" placeholder="Room Number" required />
+            </div>
+
+            <!-- Drink Selection -->
+            <div class="col-md-6 mb-3">
+              <label for="drinkChoice">Choose Your Drink</label>
+              <select class="form-control rounded-input" id="drinkChoice">
+                <option value="" disabled selected>Select a Drink</option>
+                <option value="wine">Wine</option>
+                <option value="cocktail">Cocktail</option>
+                <option value="beer">Beer</option>
+                <option value="whiskey">Whiskey</option>
+                <option value="softDrink">Soft Drink</option>
+              </select>
+            </div>
+
+            <!-- Number of Guests -->
+            <div class="col-md-6 mb-3">
+              <label for="numGuests">Number of Guests</label>
+              <input type="number" class="form-control rounded-input" id="numGuests" placeholder="Enter number of guests" min="1" max="10" required />
+            </div>
+
+            <!-- Special Requests -->
+            <div class="col-md-12 mb-3">
+              <label for="specialRequests">Special Requests (Optional)</label>
+              <textarea class="form-control rounded-input" id="specialRequests" placeholder="Any specific requests?" rows="2"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Confirm Reservation</button>
+             </form>
+      </div>
+    </div>
+  </div>
+</div>
         <!--================ Testimonial Area  =================-->
-        <section class="testimonial_area section_gap"id="review">
+             <section class="testimonial_area section_gap"id="review">
             <div class="container">
                 <div class="section_title text-center">
                     <h2 class="title_color">Testimonial from our Clients</h2>
-                    <p>The French Revolution constituted for the conscience of the dominant aristocratic class a fall from </p>
+                   
                 </div>
                 <div class="testimonial_slider owl-carousel">
                     <div class="media testimonial_item">
                         <img class="rounded-circle" src="image/testtimonial-1.jpg" alt="">
                         <div class="media-body">
-                            <p>As conscious traveling Paupers we must always be concerned about our dear Mother Earth. If you think about it, you travel across her face, and She is the </p>
-                            <a href="#"><h4 class="sec_h4">Fanny Spencer</h4></a>
+                            <p>From the moment we arrived, the hotel staff treated us like family. Every request was met with a smile, and they went above and beyond to make sure we were comfortable </p>
+                            <a href="#"><h4 class="sec_h4">Sunita</h4></a>
                             <div class="star">
                                 <a href="#"><i class="fa fa-star"></i></a>
                                 <a href="#"><i class="fa fa-star"></i></a>
@@ -317,10 +899,10 @@
                         </div>
                     </div>    
                     <div class="media testimonial_item">
-                        <img class="rounded-circle" src="image/testtimonial-1.jpg" alt="">
+                        <img class="rounded-circle" src="image/testtimonial-2.jpg" alt="">
                         <div class="media-body">
-                            <p>As conscious traveling Paupers we must always be concerned about our dear Mother Earth. If you think about it, you travel across her face, and She is the </p>
-                            <a href="#"><h4 class="sec_h4">Fanny Spencer</h4></a>
+                            <p>The level of hospitality was outstanding. I needed a few special accommodations, and the staff handled everything seamlessly </p>
+                            <a href="#"><h4 class="sec_h4">Vanita</h4></a>
                             <div class="star">
                                 <a href="#"><i class="fa fa-star"></i></a>
                                 <a href="#"><i class="fa fa-star"></i></a>
@@ -330,34 +912,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="media testimonial_item">
-                        <img class="rounded-circle" src="image/testtimonial-1.jpg" alt="">
-                        <div class="media-body">
-                            <p>As conscious traveling Paupers we must always be concerned about our dear Mother Earth. If you think about it, you travel across her face, and She is the </p>
-                            <a href="#"><h4 class="sec_h4">Fanny Spencer</h4></a>
-                            <div class="star">
-                                <a href="#"><i class="fa fa-star"></i></a>
-                                <a href="#"><i class="fa fa-star"></i></a>
-                                <a href="#"><i class="fa fa-star"></i></a>
-                                <a href="#"><i class="fa fa-star"></i></a>
-                                <a href="#"><i class="fa fa-star-half-o"></i></a>
-                            </div>
-                        </div>
-                    </div>    
-                    <div class="media testimonial_item">
-                        <img class="rounded-circle" src="image/testtimonial-1.jpg" alt="">
-                        <div class="media-body">
-                            <p>As conscious traveling Paupers we must always be concerned about our dear Mother Earth. If you think about it, you travel across her face, and She is the </p>
-                            <a href="#"><h4 class="sec_h4">Fanny Spencer</h4></a>
-                            <div class="star">
-                                <a href="#"><i class="fa fa-star"></i></a>
-                                <a href="#"><i class="fa fa-star"></i></a>
-                                <a href="#"><i class="fa fa-star"></i></a>
-                                <a href="#"><i class="fa fa-star"></i></a>
-                                <a href="#"><i class="fa fa-star-half-o"></i></a>
-                            </div>
-                        </div>
-                    </div>
+                    
+                  
                 </div>
             </div>
         </section>
@@ -368,7 +924,7 @@
     <div class="container">
         <div class="section_title text-center">
             <h2 class="title_color">Royal Hotel Gallery</h2>
-            <p>Who are in extremely love with eco-friendly systems.</p>
+       
         </div>
         <div class="row imageGallery1">
             <div class="col-md-4 gallery_item">
@@ -512,7 +1068,7 @@
         <!--================ Recent Area  =================-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-
+</br></br>
 
 
    <section id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -543,37 +1099,80 @@
   <!-- Controls -->
 
 </section>
+
         <!--================ start footer Area  =================-->	
+<style>
+footer-area section_gap py-5 {
+    background-size: cover; /* Ensure the image covers the entire area */
+    background-position: center; /* Center the image */
+    height: 100vh; /* Set a height for the carousel */
+}
+</style>
+<style>
+.footer-area {
+    background-image: url('https://images.unsplash.com/photo-1498503182468-3b51cbb6cb24?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGhvdGVsJTIwJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D');
+    background-size: cover; /* Ensure the image covers the entire area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    position: relative; /* Allows positioning of overlay */
+    color: white; /* Change text color for better contrast */
+    padding: 40px 0; /* Add padding for spacing */
+}
+
+.single-footer-widget {
+    background: rgba(0, 0, 0, 0.5); /* Optional: darken the background for better text visibility */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding for the content */
+    margin-bottom: 20px; /* Space between widgets */
+}
+
+h6.footer_title {
+    margin-bottom: 15px; /* Space below title */
+    font-weight: bold; /* Make the title bold */
+}
+
+.list_style {
+    list-style-type: none; /* Remove default list style */
+    padding: 0; /* Remove default padding */
+}
+
+.list_style li a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Change link color */
+}
+</style>
+
 <footer class="footer-area section_gap py-5">
     <div class="container">
         <div class="row">
             <!-- About Agency Section -->
             <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
                 <div class="single-footer-widget">
-                    <h6 class="footer_title mb-3">About Agency</h6>
-                    <p>The world has become so fast-paced that people prefer visual presentations over reading long pages of text. It's more engaging and easier to understand the message.</p>
+                    <h6 class="footer_title mb-3"><span class="badge rounded-pill bg-light text-dark">About Hotel</span></h6>
+                    <p>The world has become so fast paced that people don’t want to stand by reading a page of information, they would much rather look at a presentation and understand the message. It has come to a point </p>
+
                 </div>
             </div>
             <!-- Navigation Links Section -->
             <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
                 <div class="single-footer-widget">
-                    <h6 class="footer_title mb-3">Navigation Links</h6>
+                    <h6 class="footer_title mb-3"><span class="badge rounded-pill bg-info text-dark">Navigation Links</span></h6>
                     <div class="row">
                         <!-- Column 1 -->
                         <div class="col-6">
                             <ul class="list_style">
-                                <li><a href="#top"><button type="button" class="btn btn-primary btn-block mb-2">Home</button></a></li>
-                                <li><a href="#about"><button type="button" class="btn btn-secondary btn-block mb-2">About</button></a></li>
-                                <li><a href="#room"><button type="button" class="btn btn-success btn-block mb-2">Room</button></a></li>
-                                <li><a href="#services"><button type="button" class="btn btn-danger btn-block mb-2">Services</button></a></li>
+                                <li><a href="#top"><span class="badge rounded-pill bg-danger"><i class="fa fa-home"></i></span></a></li>
+                                <li><a href="#about"><span class="badge rounded-pill bg-info"><i class="fa fa-info-circle"></i></span></a></li>
+                                <li><a href="#room"><span class="badge rounded-pill bg-dark"><i class="fa fa-bed"></i></span></a></li>
+                                
                             </ul>
                         </div>
                         <!-- Column 2 -->
                         <div class="col-6">
                             <ul class="list_style">
-                                <li><a href="#review"><button type="button" class="btn btn-warning btn-block mb-2">Review</button></a></li>
-                                <li><a href="#gallery"><button type="button" class="btn btn-light btn-block mb-2">Gallery</button></a></li>
-                                <li><a href="#contact"><button type="button" class="btn btn-info btn-block mb-2">Contact Us</button></a></li>
+                                <li><a href="#review"><span class="badge rounded-pill bg-warning"><i class="fa fa-star"></i></span></a></li>
+                                
+                                <li><a href="#contact"><span class="badge rounded-pill bg-dark"><i class="fa fa-envelope"></i></span></a></li>
                             </ul>
                         </div>										
                     </div>							
@@ -582,7 +1181,7 @@
             <!-- Policies Section -->
             <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
                 <div class="single-footer-widget">
-                    <h6 class="footer_title mb-3">Policies</h6>
+                    <h6 class="footer_title mb-3"><span class="badge rounded-pill bg-success">Policies</span></h6>
                     <ul class="list_style">
                         <li><a href="#"><button type="button" class="btn btn-light btn-block mb-2">Privacy Policy</button></a></li>
                         <li><a href="#"><button type="button" class="btn btn-dark btn-block mb-2">Payment Policy</button></a></li>
@@ -595,7 +1194,7 @@
             <!-- Working Hours Section -->
             <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="single-footer-widget">
-                    <h6 class="footer_title mb-3">Working Hours</h6>
+                    <h6 class="footer_title mb-3"><span class="badge rounded-pill bg-danger">Working Hours</span></h6>
                     <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
                     <p>Saturday: 10:00 AM - 4:00 PM</p>
                     <p>Sunday: Closed</p>
@@ -604,6 +1203,7 @@
         </div>
     </div>
 </footer>
+
 <style>
 .footer-area {
     background-color: #f9f9ff;
