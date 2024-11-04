@@ -28,38 +28,45 @@
        
 
       <!--================Header Area ==center and restrict the width of the content, ensuring the header remains within set margins for better alignment on larger screens.===============-->
-     <div class="container-fluid fixed-top">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <a class="navbar-brand logo_h" href="#home"><img src="image/Logo.png" alt="Logo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-                <ul class="nav navbar-nav menu_nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#room">Room</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#review">Review</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div> 
-        </nav>
- </div>
+<div class="container-fluid fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand logo_h" href="#home"><img src="image/Logo.png" alt="Logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+            <ul class="nav navbar-nav menu_nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#room">Room</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#review">Review</a></li>
+                <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<!-- Load scripts -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
+<script>
 $(document).ready(function () {
+    // Collapse the menu when a nav-link is clicked
     $('.nav-link').on('click', function () {
         $('.navbar-collapse').collapse('hide');
     });
+
+    // Collapse the menu when the toggler (cross button) is clicked
+    $('.navbar-toggler').on('click', function () {
+        if ($('#navbarSupportedContent').hasClass('show')) {
+            $('.navbar-collapse').collapse('hide');
+        }
+    });
 });
-    </script>
+</script>
+
 
         <!--================Header Area =================-->
         
@@ -1448,7 +1455,7 @@ iframe.goog-te-menu-frame {
 
         <div class="row mt-3">
             <div class="col text-center">
-                <span>Powered by <a href="https://company.kwaga.ltd/"><span class="badge bg-danger">KwagaWebDev</span></a></span>
+                <span>Powered by <a href="https://kraftywebdesign.com/"><span class="badge bg-info">KwagaWebDev</span></a></span>
             </div>
         </div>
 
